@@ -1,0 +1,19 @@
+{
+  "name": "meditattion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilio-matics/Meditattion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilio-matics/Meditattion/issues"
+  },
+  "homepage": "https://github.com/emilio-matics/Meditattion#readme"
+}
