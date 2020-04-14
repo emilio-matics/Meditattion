@@ -1,3 +1,26 @@
+button{background-color:transparent; color:inherit; border-width:0; padding:0; margin:0; cursor:pointer; text-align:inherit;}
+img{display:block; max-width:100%;}
+/* Responsive Variables */
+$break1: "(max-width:767px)";
+$break2: "(min-width:768px) and (max-width:1023px)";
+$break2open:"(min-width:768px)";
+$break3: "(min-width:1024px) and (max-width:1439px)";
+$break3open:"(min-width:1024px)";
+$break4open: "(min-width:1440px)";
+
+/* Multi direcrtion Languages Support Variables*/
+$start-direction: left !default;
+$end-direction:   right !default;
+
+/* colors */
+:root{
+  --silver:#eeeeee;
+  --turqu:#00adb5;
+  --darkSilver:#393e46;
+  --dark:#222831;
+}
+
+
 .App {
   text-align: center;
 }
