@@ -1,11 +1,11 @@
 import React from 'react'
 import Completed from '../Completed/Completed'
 
-const ImageItem = () => {
+const ImageItem = (props) => {
     return (
         <div className="main-images-item">
-            <img alt="" src={process.env.PUBLIC_URL + "/Images/dummy.jpg"}></img>
-            <Completed></Completed>
+            <img alt="" src={process.env.PUBLIC_URL + props.source}></img>
+            {props.completed==="true" && <Completed></Completed>}
         </div>
     )
 }

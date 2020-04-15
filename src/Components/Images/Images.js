@@ -1,20 +1,14 @@
 import React from 'react'
-import ImageItem from '../ImageItem/ImageItem'
+import CommonHeader from '../CommonHeader/CommonHeader'
+import CommonTitle from '../CommonTitle/CommonTitle'
+import ImagesContainer from '../ImagesContainer/ImagesContainer'
 
 const Images = () => {
     return (
         <div className="main-images">
-            <div className="common-header">
-
-            </div>
-            <div className="common-title">
-                Images
-            </div>
-            <div className="main-images-container">
-            <ImageItem></ImageItem>
-            <ImageItem></ImageItem>
-            <ImageItem></ImageItem>
-            </div>
+            <CommonHeader></CommonHeader>
+            <CommonTitle text="Images"></CommonTitle>
+            <ImagesContainer></ImagesContainer>
         </div>
     )
 }
