@@ -1,4 +1,5 @@
 import React from 'react'
+import ImageItem from '../ImageItem/ImageItem'
 
 const Images = () => {
     return (
@@ -10,25 +11,9 @@ const Images = () => {
                 Images
             </div>
             <div className="main-images-container">
-                <div className="main-images-item">
-                    <img alt="" src={process.env.PUBLIC_URL + "/Images/dummy.jpg"}></img>
-                </div>
-                <div className="main-images-item">
-                    <img alt="" src={process.env.PUBLIC_URL + "/Images/dummy.jpg"}></img>
-                    <div className="main-images-item-completed">1</div>
-                </div>
-                <div className="main-images-item">
-                    <img alt="" src={process.env.PUBLIC_URL + "/Images/dummy.jpg"}></img>
-                </div>
-                <div className="main-images-item">
-                    <img alt="" src={process.env.PUBLIC_URL + "/Images/dummy.jpg"}></img>
-                </div>
-                <div className="main-images-item">
-                    <img alt="" src={process.env.PUBLIC_URL + "/Images/dummy.jpg"}></img>
-                </div>
-                <div className="main-images-item">
-                    <img alt="" src={process.env.PUBLIC_URL + "/Images/dummy.jpg"}></img>
-                </div>
+            <ImageItem></ImageItem>
+            <ImageItem></ImageItem>
+            <ImageItem></ImageItem>
             </div>
         </div>
     )
