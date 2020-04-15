@@ -13,12 +13,12 @@ function App() {
         </div>
         <div className="main-canvas">
           <div className="common-header"></div>
-          <div className="toggleTab">
-            <div>
+          <button className="toggle-labels">
             &#9658;
-            </div>
-          </div>
-
+          </button>
+          <button className="toggle-images">
+            &#9658;
+          </button>
         </div>
         <div className="main-images">
           <div className="common-header"></div>
