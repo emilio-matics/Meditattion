@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Labels = () => {
+const Labels = (props) => {
     return (
         <div className="main-labels">
             <div className="common-header">
