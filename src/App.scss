@@ -43,6 +43,10 @@ $end-direction: right !default;
   --turqu25: rgba(0, 173, 181, 0.25);
 }
 
+.hide{
+  display: none;
+}
+
 
 .main {
   background-color: var(--dark);
@@ -85,9 +89,6 @@ $end-direction: right !default;
   grid-area: canvas;
 }
 
-.main-images {
-  grid-area: images;
-}
 
 .main-labels {
   display: flex;
@@ -102,6 +103,9 @@ $end-direction: right !default;
 
 .main-images {
   display: none;
+  grid-area: images;
+  overflow-y: auto;
+  
 
   @media #{$break4open} {
     display: flex;
@@ -115,7 +119,8 @@ $end-direction: right !default;
     flex-direction: column;
     background-color: var(--silver);
     flex: 1;
-    @include scroll();
+    overflow-y: auto;
+    
   }
 
   &-item {
@@ -129,6 +134,10 @@ $end-direction: right !default;
       max-width: 174px;
       border: 3px solid var(--turqu);
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    img[completed="false"]{
+      margin-#{$end-direction}: 18px;
     }
 
     &-completed{
@@ -156,7 +165,7 @@ $end-direction: right !default;
 }
 
 .common-header {
-  height: 50px;
+  height: 60px;
   background-color: var(--darkSilver);
 }
 

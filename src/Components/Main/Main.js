@@ -6,9 +6,9 @@ import Images from '../Images/Images'
 const Main = () => {
     return (
         <div className="main">
-            <Labels></Labels>
+            <Labels isOpen="true"></Labels>
             <Canvas></Canvas>
-            <Images></Images>
+            <Images isOpen="true"></Images>
         </div>
     )
 }

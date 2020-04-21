@@ -7,6 +7,8 @@ const ImagesContainer = (props) => {
         <ImageItem source="Images/dummy.jpg" completed="true"></ImageItem>
         <ImageItem source="Images/dummy.jpg" completed="true"></ImageItem>
         <ImageItem source="Images/dummy.jpg" completed="false"></ImageItem>
+        <ImageItem source="Images/dummy.jpg" completed="false"></ImageItem>
+        <ImageItem source="Images/dummy.jpg" completed="false"></ImageItem>
     </div>
     )
 }
