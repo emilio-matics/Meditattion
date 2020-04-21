@@ -184,14 +184,31 @@ $end-direction: right !default;
   background-color: var(--darkSilver);
   height: 36px;
   display: flex;
+  position: relative;
   input{
     display: flex;
-    margin:0 auto;
-    width:90%;
+    // margin:0 auto;
+    // width:90%;
     outline: none;border:0;
     background-color: transparent;
     color: var(--silver);
+    margin-#{$end-direction}: 20px;
+    width:90%;
+    text-overflow: ellipsis;
   }
+  img{
+    margin-#{$start-direction}:auto;
+  }
+
+  &-delete{
+    // display: none;
+    position: absolute;
+    #{$end-direction}:5px;
+    display: flex;
+    align-self: center;
+    
+  }
+  
 }
 
 @mixin toggleMenu($position) {
