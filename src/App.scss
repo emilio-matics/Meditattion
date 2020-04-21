@@ -183,6 +183,15 @@ $end-direction: right !default;
 .common-search {
   background-color: var(--darkSilver);
   height: 36px;
+  display: flex;
+  input{
+    display: flex;
+    margin:0 auto;
+    width:90%;
+    outline: none;border:0;
+    background-color: transparent;
+    color: var(--silver);
+  }
 }
 
 @mixin toggleMenu($position) {
