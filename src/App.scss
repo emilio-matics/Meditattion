@@ -89,9 +89,6 @@ $end-direction: right !default;
   grid-area: canvas;
 }
 
-.main-images {
-  grid-area: images;
-}
 
 .main-labels {
   display: flex;
@@ -106,6 +103,9 @@ $end-direction: right !default;
 
 .main-images {
   display: none;
+  grid-area: images;
+  overflow-y: auto;
+  
 
   @media #{$break4open} {
     display: flex;
@@ -119,7 +119,8 @@ $end-direction: right !default;
     flex-direction: column;
     background-color: var(--silver);
     flex: 1;
-    @include scroll();
+    overflow-y: auto;
+    
   }
 
   &-item {
@@ -160,7 +161,7 @@ $end-direction: right !default;
 }
 
 .common-header {
-  height: 50px;
+  height: 60px;
   background-color: var(--darkSilver);
 }
 
