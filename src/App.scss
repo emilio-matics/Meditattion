@@ -136,6 +136,10 @@ $end-direction: right !default;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
     }
 
+    img[completed="false"]{
+      margin-#{$end-direction}: 18px;
+    }
+
     &-completed{
       align-self: flex-end;
       display: flex;
