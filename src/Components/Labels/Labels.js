@@ -4,6 +4,7 @@ import CommonTitle from '../CommonTitle/CommonTitle'
 import CommonSearch from '../CommonSearch/CommonSearch'
 import LabelsContainer from '../LabelsContainer/LabelsContainer'
 import AddLabelBtn from '../AddLabelBtn/AddLabelBtn'
+import LabelItem from '../LabelItem/LabelItem'
 
 
 
@@ -15,6 +16,12 @@ const Labels = (props) => {
             <CommonSearch></CommonSearch>
             <LabelsContainer></LabelsContainer>
             <AddLabelBtn></AddLabelBtn>
+            <div className="main-labels-container">
+                <LabelItem></LabelItem>
+                <LabelItem></LabelItem>
+            </div>
+
+
         </div>
     )
 }
