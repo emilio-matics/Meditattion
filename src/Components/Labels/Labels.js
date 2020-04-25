@@ -12,6 +12,7 @@ const Labels = (props) => {
             <CommonTitle text="Labels"></CommonTitle>
             <CommonSearch></CommonSearch>
             <LabelsContainer></LabelsContainer>
+            <div className="main-labels-add-btn">Add new Label</div>
         </div>
     )
 }
