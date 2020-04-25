@@ -9,7 +9,7 @@ const Canvas = () => {
         <div className="main-canvas">
             <CommonHeader>
                 <div className="main-toolbar">
-                    <ToolBarItem type="redo.svg" ></ToolBarItem>
+                    <ToolBarItem flip="true" type="redo.svg" ></ToolBarItem>
                     <ToolBarItem type="redo.svg"></ToolBarItem>
                     <ToolBarItem type="zoomIn.svg"></ToolBarItem>
                     <ToolBarItem type="zoomOut.svg"></ToolBarItem>
