@@ -3,6 +3,8 @@ import CommonHeader from '../CommonHeader/CommonHeader'
 import CommonTitle from '../CommonTitle/CommonTitle'
 import CommonSearch from '../CommonSearch/CommonSearch'
 import LabelsContainer from '../LabelsContainer/LabelsContainer'
+import AddLabelBtn from '../AddLabelBtn/AddLabelBtn'
+
 
 
 const Labels = (props) => {
@@ -12,10 +14,7 @@ const Labels = (props) => {
             <CommonTitle text="Labels"></CommonTitle>
             <CommonSearch></CommonSearch>
             <LabelsContainer></LabelsContainer>
-            <div className="main-labels-add-btn">
-                <span>Add new label</span>
-                <img  alt="" src={process.env.PUBLIC_URL + "Images/plusS.svg"}></img>
-            </div>
+            <AddLabelBtn></AddLabelBtn>
         </div>
     )
 }
