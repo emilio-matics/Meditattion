@@ -82,8 +82,55 @@ $end-direction: right !default;
 }
 
 
+
 .main-canvas {
   grid-area: canvas;
+}
+
+.main-toolbar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-self: center;
+  width:100%;
+
+  &-selectors{
+    margin-#{$start-direction}: auto;
+    display: flex;
+    flex-direction: row;
+
+    &-selector{
+      width: 100px;
+      height: 40px;
+      background-color: var(--silver);
+      border-radius: 5px;
+      display: flex;
+      margin: 0 12px;
+      cursor: pointer;
+  
+      img{
+        width:30px;
+        justify-self: center;
+        margin:0 auto;
+      }
+    }
+  }
+
+  &-tool {
+    width: 40px;
+    height: 40px;
+    background-color: var(--silver);
+    border-radius: 5px;
+    display: flex;
+    margin: 0 12px;
+    cursor: pointer;
+
+    img{
+      width:30px;
+      justify-self: center;
+      margin:0 auto;
+    }
+  }
 }
 
 
@@ -108,22 +155,22 @@ $end-direction: right !default;
     align-items: center;
     border-bottom: 1px solid var(--darkSilver);
     position: relative;
-    color:var(--silver);
+    color: var(--silver);
 
-    span{
-      padding-#{$start-direction}:5px;
+    span {
+      padding-#{$start-direction}: 5px;
     }
 
-    img{
-      width:20px;
+    img {
+      width: 20px;
       position: absolute;
-      #{$end-direction}:2px;
+      #{$end-direction}: 7px;
     }
 
-    &-blank{
-      height:100%;
-      background-color:white;
-      opacity:0.3;
+    &-blank {
+      height: 100%;
+      background-color: white;
+      opacity: 0.3;
     }
   }
 
@@ -140,6 +187,7 @@ $end-direction: right !default;
     height: 40px;
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid var(--darkSilver);
 
     img {
       display: inline-flex;
@@ -220,6 +268,7 @@ $end-direction: right !default;
 .common-header {
   height: 60px;
   background-color: var(--darkSilver);
+  display: flex;
 }
 
 .common-title {
@@ -249,7 +298,7 @@ $end-direction: right !default;
     margin-#{$end-direction}: 20px;
     width: 90%;
     text-overflow: ellipsis;
-    padding-#{$start-direction}:5px;
+    padding-#{$start-direction}: 5px;
   }
 
   img {
@@ -259,7 +308,7 @@ $end-direction: right !default;
   &-delete {
     // display: none;
     position: absolute;
-    #{$end-direction}: 5px;
+    #{$end-direction}: 10px;
     display: flex;
     align-self: center;
 

@@ -20,8 +20,6 @@ const Labels = (props) => {
                 <LabelItem text="item1"></LabelItem>
                 <LabelItem text="item2"></LabelItem>
             </LabelsContainer>
-
-
         </div>
     )
 }
