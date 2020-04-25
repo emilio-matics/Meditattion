@@ -16,10 +16,10 @@ const Labels = (props) => {
             <CommonSearch></CommonSearch>
             <LabelsContainer></LabelsContainer>
             <AddLabelBtn></AddLabelBtn>
-            <div className="main-labels-container">
-                <LabelItem></LabelItem>
-                <LabelItem></LabelItem>
-            </div>
+            <LabelsContainer>
+                <LabelItem text="item1"></LabelItem>
+                <LabelItem text="item2"></LabelItem>
+            </LabelsContainer>
 
 
         </div>

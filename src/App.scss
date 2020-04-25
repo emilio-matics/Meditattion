@@ -107,6 +107,18 @@ $end-direction: right !default;
     grid-template-columns: 24px 1fr;
     align-items: center;
     border-bottom: 1px solid var(--darkSilver);
+    position: relative;
+    color:var(--silver);
+
+    span{
+      padding-#{$start-direction}:5px;
+    }
+
+    img{
+      width:20px;
+      position: absolute;
+      #{$end-direction}:2px;
+    }
 
     &-blank{
       height:100%;
@@ -230,8 +242,6 @@ $end-direction: right !default;
 
   input {
     display: flex;
-    // margin:0 auto;
-    // width:90%;
     outline: none;
     border: 0;
     background-color: transparent;
@@ -239,6 +249,7 @@ $end-direction: right !default;
     margin-#{$end-direction}: 20px;
     width: 90%;
     text-overflow: ellipsis;
+    padding-#{$start-direction}:5px;
   }
 
   img {
