@@ -164,7 +164,7 @@ $end-direction: right !default;
     img {
       width: 20px;
       position: absolute;
-      #{$end-direction}: 2px;
+      #{$end-direction}: 7px;
     }
 
     &-blank {
@@ -187,6 +187,7 @@ $end-direction: right !default;
     height: 40px;
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid var(--darkSilver);
 
     img {
       display: inline-flex;
@@ -307,7 +308,7 @@ $end-direction: right !default;
   &-delete {
     // display: none;
     position: absolute;
-    #{$end-direction}: 5px;
+    #{$end-direction}: 10px;
     display: flex;
     align-self: center;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import CommonHeader from '../CommonHeader/CommonHeader'
 import ToolBarItem from '../ToolBarItem/ToolBarItem'
+import Selectors from '../Selectors/Selectors'
 import SelectorItem from '../SelectorItem/SelectorItem'
 
 const Canvas = () => {
@@ -14,11 +15,11 @@ const Canvas = () => {
                     <ToolBarItem type="zoomOut.svg"></ToolBarItem>
                     <ToolBarItem type="hand.svg"></ToolBarItem>
                     <ToolBarItem type="cursor.svg"></ToolBarItem>
-                    <div className="main-toolbar-selectors" >
+                    <Selectors>
                         <SelectorItem type="bounding-box.svg"></SelectorItem>
-                        <SelectorItem type="pin.svg"></SelectorItem>
                         <SelectorItem type="polygon.svg"></SelectorItem>
-                    </div>
+                        <SelectorItem type="pin.svg"></SelectorItem>
+                    </Selectors>
                 </div>
             </CommonHeader>
             <button className="toggle-labels">
