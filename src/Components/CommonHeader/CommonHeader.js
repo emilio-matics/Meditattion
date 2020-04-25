@@ -1,9 +1,10 @@
 import React from 'react'
 
 
-const CommonHeader = () => {
+const CommonHeader = (props) => {
     return (
         <div className="common-header">
+            {props.children}
         </div>
     )
 }
