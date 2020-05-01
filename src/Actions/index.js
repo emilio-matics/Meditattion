@@ -1,8 +1,15 @@
-import {TOGGLE_MENU} from '../Constatns/index'
+import {ADD_LABEL,TOGGLE_MENU} from '../Constatns/index'
 
-const toggleMenu = menu => ({
+
+const actions={
+  toggleMenu : menu => ({
     type: TOGGLE_MENU,
     menu
+  }),
+  addLabel:label=>({
+    type:ADD_LABEL,
+    payload:label
   })
+}
 
-  export default toggleMenu;
+  export default actions;

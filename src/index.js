@@ -5,7 +5,7 @@ import { createStore } from 'redux'
 import './index.scss';
 import App from './App';
 import rootReducer from './Reducers'
-const store = createStore(rootReducer)
+const store = createStore(rootReducer,{Labels:[{text:"dummy item"}]})
 
 ReactDOM.render(
   <React.StrictMode>

@@ -10,29 +10,38 @@ import LabelItem from '../LabelItem/LabelItem'
 
 
 const Labels = (props) => {
+    const overAllState=useSelector(state=>state);
+    console.log("redux state:",overAllState);
     const labelsIsVisible = useSelector(state => state.Toggles.labelsVisible);
+    const labelsContainer = useSelector(state => state.Labels);
+    console.log("labelsContainer",labelsContainer);
+    const labelsToDisplay = [];
 
-
-        return (
-            <div className={labelsIsVisible ? 'main-labels' : 'main-labels hide'}>
-                <CommonHeader></CommonHeader>
-                <CommonTitle text="Labels"></CommonTitle>
-                <CommonSearch></CommonSearch>
-                <LabelsContainer></LabelsContainer>
-                <AddLabelBtn></AddLabelBtn>
-                <LabelsContainer>
-                    <LabelItem text="item1"></LabelItem>
-                    <LabelItem text="item2"></LabelItem>
-                </LabelsContainer>
-            </div>
+    labelsContainer.forEach(label => {
+        labelsToDisplay.push(
+            <LabelItem text={label.text}></LabelItem>
         )
+    });
+
+    return (
+        <div className={labelsIsVisible ? 'main-labels' : 'main-labels hide'}>
+            <CommonHeader></CommonHeader>
+            <CommonTitle text="Labels"></CommonTitle>
+            <CommonSearch></CommonSearch>
+            <LabelsContainer></LabelsContainer>
+            <AddLabelBtn></AddLabelBtn>
+            <LabelsContainer>
+                {labelsToDisplay}
+            </LabelsContainer>
+        </div>
+    )
 
 
 
-        // <div className="main-labels">
-        
+    // <div className="main-labels">
 
-    
+
+
 }
 
 export default Labels;
