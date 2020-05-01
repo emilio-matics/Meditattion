@@ -1,6 +1,8 @@
-import {TOGGLE_MENU} from '../Actions'
+import {TOGGLE_MENU} from '../Constatns/index'
 
-export const toggleMenu = menu => ({
+const toggleMenu = menu => ({
     type: TOGGLE_MENU,
     menu
   })
+
+  export default toggleMenu;

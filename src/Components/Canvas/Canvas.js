@@ -1,10 +1,22 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import { useSelector,useDispatch } from 'react-redux';
 import CommonHeader from '../CommonHeader/CommonHeader'
 import ToolBarItem from '../ToolBarItem/ToolBarItem'
 import Selectors from '../Selectors/Selectors'
 import SelectorItem from '../SelectorItem/SelectorItem'
+import toggleMenu from '../../Actions/index'
 
 const Canvas = () => {
+
+    const dispatch=useDispatch();
+
+    const labelsIsVisible=useSelector(state=>state.Toggles.labelsVisible);
+    const imagesIsVisible=useSelector(state=>state.Toggles.imagesVisible);
+
+    // useEffect(() => {
+    //     dispatch(toggleMenu(user))
+    //   }, [])
+
     return (
         <div className="main-canvas">
             <CommonHeader>
@@ -22,10 +34,10 @@ const Canvas = () => {
                     </Selectors>
                 </div>
             </CommonHeader>
-            <button className="toggle-labels">
+            <button className={labelsIsVisible?"toggle-labels flipHorizontal":"toggle-labels "} onClick={()=>dispatch(toggleMenu('labels'))}>
                 &#9658;
           </button>
-            <button className="toggle-images">
+            <button className={imagesIsVisible?"toggle-images ":"toggle-images flipHorizontal"} onClick={()=>dispatch(toggleMenu('images'))}>
                 &#9658;
           </button>
         </div>

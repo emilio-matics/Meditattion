@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import demi from './demi'
+import Toggles from './Toggles'
 // import visibilityFilter from './visibilityFilter'
 
 export default combineReducers({
-  demi
+  Toggles
 })
