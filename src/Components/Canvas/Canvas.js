@@ -4,7 +4,7 @@ import CommonHeader from '../CommonHeader/CommonHeader'
 import ToolBarItem from '../ToolBarItem/ToolBarItem'
 import Selectors from '../Selectors/Selectors'
 import SelectorItem from '../SelectorItem/SelectorItem'
-import toggleMenu from '../../Actions/index'
+import actions from '../../Actions/index'
 
 const Canvas = () => {
 
@@ -34,10 +34,10 @@ const Canvas = () => {
                     </Selectors>
                 </div>
             </CommonHeader>
-            <button className={labelsIsVisible?"toggle-labels flipHorizontal":"toggle-labels "} onClick={()=>dispatch(toggleMenu('labels'))}>
+            <button className={labelsIsVisible?"toggle-labels flipHorizontal":"toggle-labels "} onClick={()=>dispatch(actions.toggleMenu('labels'))}>
                 &#9658;
           </button>
-            <button className={imagesIsVisible?"toggle-images ":"toggle-images flipHorizontal"} onClick={()=>dispatch(toggleMenu('images'))}>
+            <button className={imagesIsVisible?"toggle-images ":"toggle-images flipHorizontal"} onClick={()=>dispatch(actions.toggleMenu('images'))}>
                 &#9658;
           </button>
         </div>

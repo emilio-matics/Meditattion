@@ -13,13 +13,13 @@ const Labels = (props) => {
     const overAllState=useSelector(state=>state);
     console.log("redux state:",overAllState);
     const labelsIsVisible = useSelector(state => state.Toggles.labelsVisible);
-    const labelsContainer = useSelector(state => state.Labels);
+    const labelsContainer = useSelector(state => state.Labels.container);
     console.log("labelsContainer",labelsContainer);
     const labelsToDisplay = [];
 
     labelsContainer.forEach(label => {
         labelsToDisplay.push(
-            <LabelItem text={label.text}></LabelItem>
+            <LabelItem key={label.key} text={label.text}></LabelItem>
         )
     });
 

@@ -1,7 +1,9 @@
-const container = [{text:"first item"}];
+const initState = {
+    container:[{text:"first item"}]
+};
 
 
-const Labels = (state = container, action) => {
+const Labels = (state = initState, action) => {
     switch (action.type) {
         case 'ADD_LABEL':
             return Object.assign({}, state, {
